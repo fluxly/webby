@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../fonts/Serif/cmun-serif.css">
+	<link rel="stylesheet" href="../../styles.css">
+	<link rel="stylesheet" href="../../fonts/silkscreen.css">
+<style>
+	body {
+        padding:0px 0px 0px 0px;
+		color:#000000;
+	}
+	.caption-title {
+		
+	}
+</style>
+<script>
+	function showCaption(n) {
+		console.log(n);
+	   var captions = document.getElementsByClassName("text-caption");
+	   console.log(captions.length);
+	   for (i = 0; i < captions.length; i++) {
+	        captions[i].style.display = "none";
+	   }
+		document.getElementById(n).style.display = "block";
+	}
+</script>
+</head>
+<body>
+<div id="0" class="text-caption">
+	<center><div class="caption-title">Shempscape Contact Mic Preamp</div></center>
+	<div class="caption-body">A simple MOSFET-based circuit for impedence matching of piezo contact mics. Shempscape brand was intended as an umbrella for audio knick knacks and has recently been used in the Cryptozoologic app for the Shempscape Bytebeat Shufflebox synth.</div>
+</div>
+<div id="1" class="text-caption">
+	<center><div class="caption-title">Drawbot Controller</div></center>
+	<div class="caption-body">This is an Atmega-based 2-axis drawbot controller. Two Allegro stepper motor controllers with enable switches on the side. It can be used standalone or as a peripheral shield on a Raspberry Pi. It didn't make sense as a product but has been handy for one-off projects. </div>
+</div>
+<div id="2" class="text-caption">
+	<center><div class="caption-title">SMT Trippy Waves Clone</div></center>
+	<div class="caption-body">This is an Attiny-based version of Mitch Altman's Trippy Waves kit. The RGB LED goes through a pre-programmed sequence. There's an IR emitter and detector pointing up so when you wave your hand over the board it resets. USB header for power only. </div>
+</div>
+
+</body>
+</html>
